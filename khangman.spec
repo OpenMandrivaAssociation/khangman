@@ -1,11 +1,11 @@
 Name:		khangman
 Summary:	Classical hangman game
-Version:	4.8.97
-Release:	1
+Version: 4.9.0
+Release: 1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFLD
 URL:		http://edu.kde.org/khangman
-Source:		ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 BuildRequires:	libkdeedu-devel >= %{version}
 Requires:	libkdeedu = %{version}

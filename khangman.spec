@@ -1,7 +1,7 @@
 Summary:	Classical hangman game
 Name:		khangman
 Version:	4.14.3
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/khangman

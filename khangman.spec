@@ -1,13 +1,13 @@
-Name:		khangman
 Summary:	Classical hangman game
-Version:	4.13.3
-Release:	1
+Name:		khangman
+Version:	4.14.3
+Release:	2
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2 GFLD
-URL:		http://edu.kde.org/khangman
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs4-devel
+Url:		http://edu.kde.org/khangman
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdeedu-devel >= %{version}
+BuildRequires:	kdelibs4-devel
 Requires:	libkdeedu = %{version}
 
 %description
@@ -19,12 +19,13 @@ is displayed.
 %files
 %doc COPYING COPYING.DOC README
 %doc %{_kde_docdir}/HTML/en/%{name}
+%{_kde_applicationsdir}/%{name}.desktop
 %{_kde_appsdir}/%{name}
 %{_kde_bindir}/%{name}
-%{_kde_iconsdir}/*/*/apps/%{name}*
-%{_kde_applicationsdir}/%{name}.desktop
-%{_kde_datadir}/config.kcfg/%{name}.kcfg
 %{_kde_configdir}/%{name}.knsrc
+%{_kde_datadir}/appdata/khangman.appdata.xml
+%{_kde_datadir}/config.kcfg/%{name}.kcfg
+%{_kde_iconsdir}/*/*/apps/%{name}*
 %{_kde_mandir}/man6/%{name}.6.*
 
 #----------------------------------------------------------------------------
@@ -71,6 +72,16 @@ Files needed to build applications based on %{name}.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
+- New version 4.14.1
+- Update files
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
 

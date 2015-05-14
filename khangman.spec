@@ -1,6 +1,6 @@
 Summary:	Classical hangman game
 Name:		khangman
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE

@@ -6,8 +6,19 @@ License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/khangman
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	libkdeedu-devel >= %{version}
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5Completion)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5Declarative)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5NewStuff)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5KIO)
 
 %description
 KHangman is the classical hangman game. The child should guess a word

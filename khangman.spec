@@ -29,15 +29,16 @@ is displayed.
 
 %files
 %doc COPYING COPYING.DOC README
-%doc %{_kde_docdir}/HTML/en/%{name}
-%{_kde_applicationsdir}/%{name}.desktop
-%{_kde_appsdir}/%{name}
-%{_kde_bindir}/%{name}
-%{_kde_configdir}/%{name}.knsrc
-%{_kde_datadir}/appdata/khangman.appdata.xml
-%{_kde_datadir}/config.kcfg/%{name}.kcfg
-%{_kde_iconsdir}/*/*/apps/%{name}*
-%{_kde_mandir}/man6/%{name}.6.*
+%doc %{_docdir}/HTML/*/%{name}
+%{_bindir}/khangman
+%{_sysconfdir}/xdg/khangman.knsrc
+%{_datadir}/appdata/khangman.appdata.xml
+%{_datadir}/applications/org.kde.khangman.desktop
+%{_datadir}/config.kcfg/khangman.kcfg
+%{_iconsdir}/hicolor/*/apps/*.*[gz]
+%{_datadir}/khangman
+%{_mandir}/man6/khangman.6.*
+
 
 #----------------------------------------------------------------------------
 

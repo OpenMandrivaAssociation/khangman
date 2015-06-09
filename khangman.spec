@@ -19,6 +19,7 @@ BuildRequires:	cmake(KF5NewStuff)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(LibKEduVocDocument)
 
 %description
 KHangman is the classical hangman game. The child should guess a word

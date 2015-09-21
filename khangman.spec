@@ -1,7 +1,7 @@
 Summary:	Classical hangman game
 Name:		khangman
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/khangman
@@ -20,6 +20,12 @@ BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(LibKEduVocDocument)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Qml)
+BuildRequires:	cmake(Qt5Quick)
+BuildRequires:	cmake(Qt5QuickWidgets)
+BuildRequires:	cmake(Qt5Svg)
+
 Obsoletes:		%{mklibname khangmanengine 4} < 15.04.2
 Obsoletes:		khangman-devel  < 15.04.2
 

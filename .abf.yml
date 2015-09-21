@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   khangman-15.08.0.tar.xz: 5b492da888020f122e7fec14ef23250cade6a3c9
+sources:
+  khangman-15.08.1.tar.xz: 37190d84525cbc696ebf6b54d43b4ee5ecffdef4

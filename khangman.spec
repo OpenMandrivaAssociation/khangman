@@ -40,7 +40,7 @@ is displayed.
 %doc %{_docdir}/HTML/*/%{name}
 %{_bindir}/khangman
 %{_sysconfdir}/xdg/khangman.knsrc
-%{_datadir}/appdata/khangman.appdata.xml
+%{_datadir}/appdata/org.kde.khangman.appdata.xml
 %{_datadir}/applications/org.kde.khangman.desktop
 %{_datadir}/config.kcfg/khangman.kcfg
 %{_iconsdir}/hicolor/*/apps/*.*[gz]

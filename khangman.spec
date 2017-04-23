@@ -1,6 +1,6 @@
 Summary:	Classical hangman game
 Name:		khangman
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -35,17 +35,16 @@ letter by letter. At each miss, the picture of a hangman appears. After
 10 tries, if the word is not guessed, the game is over and the answer
 is displayed.
 
-%files
+%files -f %{name}.lang
 %doc COPYING COPYING.DOC README
-%doc %{_docdir}/HTML/*/%{name}
 %{_bindir}/khangman
 %{_sysconfdir}/xdg/khangman.knsrc
-%{_datadir}/appdata/org.kde.khangman.appdata.xml
 %{_datadir}/applications/org.kde.khangman.desktop
 %{_datadir}/config.kcfg/khangman.kcfg
 %{_iconsdir}/hicolor/*/apps/*.*[gz]
 %{_datadir}/khangman
 %{_mandir}/man6/khangman.6.*
+%{_datadir}/metainfo/*.xml
 
 #----------------------------------------------------------------------
 
@@ -58,3 +57,4 @@ is displayed.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html --with-man

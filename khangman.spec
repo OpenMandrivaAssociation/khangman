@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Classical hangman game
 Name:		khangman
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE

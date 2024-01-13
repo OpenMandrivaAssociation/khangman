@@ -23,9 +23,13 @@ BuildRequires:	cmake(KF6KIO)
 BuildRequires:	cmake(LibKEduVocDocument)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
 BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6QuickWidgets)
 BuildRequires:	cmake(Qt6Svg)
+BuildRequires:	cmake(Qt6Xml)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 Obsoletes:		%{mklibname khangmanengine 4} < 16.04.2
 Obsoletes:		khangman-devel  < 16.04.2

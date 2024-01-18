@@ -30,7 +30,7 @@ BuildRequires:	cmake(Qt6QuickWidgets)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:	cmake(Qt6Xml)
 BuildRequires:  qt6-qtbase-theme-gtk3
-
+BuildRequires: cmake(Qt5Xml)
 Obsoletes:		%{mklibname khangmanengine 4} < 16.04.2
 Obsoletes:		khangman-devel  < 16.04.2
 

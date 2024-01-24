@@ -22,7 +22,7 @@ BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KF6KIO)
 # Can't do this while KF5 is still in the tree, it provides it too
 #BuildRequires:	cmake(LibKEduVocDocument)
-BuildRequires:	%mklibname KEduVocDocument6
+BuildRequires:	%mklibname KEduVocDocument6 -d
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Qml)
 BuildRequires:  cmake(Qt6QmlCore)

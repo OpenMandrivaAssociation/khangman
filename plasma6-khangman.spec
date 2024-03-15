@@ -5,7 +5,7 @@
 Summary:	Classical hangman game
 Name:		plasma6-khangman
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/khangman

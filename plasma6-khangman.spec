@@ -8,7 +8,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://edu.kde.org/khangman
+Url:		https://edu.kde.org/khangman
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/education/khangman/-/archive/%{gitbranch}/khangman-%{gitbranchd}.tar.bz2#/khangman-%{git}.tar.bz2
 %else

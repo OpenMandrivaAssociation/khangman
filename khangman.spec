@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Classical hangman game
 Name:		khangman
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -39,9 +39,13 @@ BuildRequires:	cmake(Qt6QuickWidgets)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:	cmake(Qt6Xml)
 BuildRequires:  qt6-qtbase-theme-gtk3
-BuildRequires: cmake(Qt5Xml)
 Obsoletes:		%{mklibname khangmanengine 4} < 16.04.2
 Obsoletes:		khangman-devel  < 16.04.2
+
+%rename plasma6-khangman
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 KHangman is the classical hangman game. The child should guess a word
@@ -49,7 +53,7 @@ letter by letter. At each miss, the picture of a hangman appears. After
 10 tries, if the word is not guessed, the game is over and the answer
 is displayed.
 
-%files -f khangman.lang
+%files -f %{name}.lang
 %doc COPYING COPYING.DOC README
 %{_bindir}/khangman
 %{_datadir}/applications/org.kde.khangman.desktop
@@ -59,18 +63,3 @@ is displayed.
 %{_mandir}/man6/khangman.6.*
 %{_datadir}/metainfo/*.xml
 %{_datadir}/knsrcfiles/khangman.knsrc
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n khangman-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang khangman --with-html --with-man
